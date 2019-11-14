@@ -18,7 +18,8 @@ const actions = {
     const response = await axios.post('https://jsonplaceholder.typicode.com/todos', { title, completed: false });
 
     commit('newTodo', response.data);
-  }
+  },
+
 };
 
 const mutations = {
